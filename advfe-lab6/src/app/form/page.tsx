@@ -11,7 +11,6 @@ function BasicValidationForm() {
     const newPassword = e.target.value;
     setPassword(newPassword);
     
-    // Password validation
     if (newPassword.length < 6) {
       setErrors((prev) => ({ ...prev, password: 'Password must be at least 6 characters long' }));
     } else {
